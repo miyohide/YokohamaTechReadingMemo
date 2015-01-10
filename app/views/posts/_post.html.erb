@@ -1,0 +1,11 @@
+<article>
+    <header>
+        <p>
+            <time pubdate="pubdate"><%= post.pubdate %></time>
+        </p>
+        <h3><%= post.title %></h3>
+        <div class="entry_tags">Tags:<%# post.tags.render(self) %></div>
+    </header>
+    <%# post.render_body(self) %>
+</article>
+
