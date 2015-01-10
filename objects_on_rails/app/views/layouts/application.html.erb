@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+   <div class="row">
+       <div class="col-md-2">
+         <h4>Tags</h4>
+         <nav>
+           <ul><%# blog.tags.inspect %></ul>
+         </nav>
+         <%= link_to "New Post...", new_post_path %>
+      </div>
+      <div class="col-md-10">
+         <%= yield %>
+      </div>
+   </div>
+</div>
+
+</body>
+</html>
