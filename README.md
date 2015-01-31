@@ -12,6 +12,8 @@
 - だが、[ActiveType](https://github.com/makandra/active_type)というGemを使えば、`SignIn`モデルをP22に書かれるように実装できる。
 - [ActiveType](https://github.com/makandra/active_type)と似たようなものに[Virtus](https://github.com/solnic/virtus)というGemがあるようだ。読書会ではこっちを使う人が多かった。
   - 個人的にはどっちも知らなかった。そもそもの使いドコロがピンときていないので、ちゃんと復習しておく。
+  - 検索したら、[Railsでフォームオブジェクトを使った検索を簡単に実装する方法](http://techracho.bpsinc.jp/morimorihoge/2013_07_26/12552)が引っかかった。これはわかりやすい。
+  - Qiitaに[joker1007さんの記事](http://qiita.com/joker1007/items/90bb12070d9db6f1dc1e)があった。これは似たようなことをやっているGemの比較。
 
 ## 2015年1月10日（土）
 
