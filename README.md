@@ -1,4 +1,22 @@
 # 横浜技術書朗読会 読書メモ
+## 2015年2月7日（土） Growing Rails Applications In Practice P22 - P33
+- controllerのリファクタリングについて。
+- P23に書かれている責務をリファクタリング前では全てコントローラ内で実装している。
+- P24ではViewについて。Viewもform_tagを使っていたり、ActiveRecordのメソッドを呼び出したりしていて汚い。
+- P25ではActiveTypeを使った場合のViewのリファクタリング結果を表示している。
+  - [ActiveType](https://github.com/makandra/active_type)は前回習ったGem。
+  - これを使った実装例はこのあと（P26）に出てくる。
+  - Viewのリファクタリングでは`form_for`を使って実装できており、項目ごとに繰り返しているだけ。大変シンプル。
+- P26ではcontrollerの実装。
+  - この人のcontrollerの書き方は、極力同じコードをひとつに纏める感じ。例えば、`build_merge`メソッド。
+  - この方針は読書会の中ではあまり評判が良くなかった。
+- P26からP27ではActiveTypeを使った実装例。P23で記した責務を一つ一つCallbackとして定義している。
+  - Callbackではなく、サービスクラスのように別に分けることもできるけど、この本では1つのソースで。
+  - サービスクラスについては、[Qiitaに記事](http://qiita.com/okuramasafumi/items/9d892845c3b135a5593e)があったので、あとで見ておく。
+- P30からはFat modelに対する対処について。
+- まずは、Fat model自身に対する解説を記している。
+- 第6章からはその対策？
+
 ## 2015年1月31日（土） Growing Rails Applications In Practice P13 - P22
 
 - Growing Rails Applications In PracticeのP13 Understanding the ActiveRecord lifecycle
