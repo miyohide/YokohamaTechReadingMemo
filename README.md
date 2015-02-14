@@ -1,4 +1,20 @@
 # 横浜技術書朗読会 読書メモ
+## 2015年2月14日（土） Growing Rails Applications In Practice P33 - P43
+
+- P35で書かれている`User`モデルを修正するのがこの章のテーマ。
+- 修正後のソースは、`User`モデルを継承する形で`User::AsSignUp`というモデルを作る
+- `User`モデルに`email`を残すのはすべての処理でメールアドレスは共通的にValidationする必要があるからってことかな
+- `User::AsSignUp`だけに`password`を持っていくのは、サインアップの時だけパスワードの確認が必要だからってこと
+- `acceptance`はチェックボックスのチェックが入っているかどうかをチェックするValidation。
+- 継承する方法とは別に、ActiveSupport::Concernでincludeする方法がある。
+  - それだとコード量は減るけど、modelのサイズとしては太ったまま。
+- 継承する方法で出てくる問題は、P38の箇条書きの部分。
+- その問題を解決するのが`ActiveType`。解決方法は継承元を`ActiceType::Record[User]`にするとよい。
+- service objectについて。ActiveRecordには無関係なものを取り出して、PlainなRubyのクラスを作る。
+- P41に記されたコードをservice objectを使って書き換えたのがP42。
+  - 確かにSQL文の組み立てとかは外に出せている。これによってテストがしやすくなってい...る？
+- この著者は、modelsの下に新しくディレクトリを作ることが好みっぽいけど、複数のモデルを扱うことを考えたら、servicesディレクトリの中においた方がいいような気がする。
+
 ## 2015年2月7日（土） Growing Rails Applications In Practice P22 - P33
 - controllerのリファクタリングについて。
 - P23に書かれている責務をリファクタリング前では全てコントローラ内で実装している。
