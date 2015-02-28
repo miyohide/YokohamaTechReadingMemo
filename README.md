@@ -1,4 +1,17 @@
 # 横浜技術書朗読会 読書メモ
+## 2015年2月28日（土） Growing Rails Applications In Practice P55 - P65
+
+- メンテナンスしやすいCSSの設計として、ここではBEM（Block, Element, Modifier）って手法を用いる
+- Blockは画面を構成する各部品。例えば、ナビゲーションバーやブログの記事とか。
+- Elementはブロックの下にある各要素。クラス名はBlock＋"__"＋Elementの形をとる。
+  - "__"は"--"でもいい。要するに、BlockとElementを区別できればよい。
+  - ちなみに、"_"は単語の区切りとして使われるので、NG
+- ModifiersはBlockやElementをまたがって、共通的にCSSを当てるときにつけるセレクタって感じ。
+- Modifiersの使いドコロというか設計がかなり難しい気がする。
+- そんな話をしていたら、[Web制作者のためのCSS設計の教科書 モダンWeb開発に欠かせない「修正しやすいCSS」の設計手法](http://tatsu-zine.com/books/css-architecture-textbook)をオススメされた。
+- 話は更に発展して、CSSライブラリの話に。
+- 最近は、[compass](http://compass-style.org/)以外に[Bourbon](http://bourbon.io/)ってものもあるらしい。
+
 ## 2015年2月21日（土） Growing Rails Applications In Practice P44 - P54
 
 - modelの肥大化について。関係のあるものをまとめて、サブディレクトリにおいておくという手法を紹介している。
