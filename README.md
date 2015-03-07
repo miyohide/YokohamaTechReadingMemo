@@ -1,5 +1,5 @@
 # 横浜技術書朗読会 読書メモ
-## 2015年3月7日（土） Growing Rails Applications In Practice P65 - P
+## 2015年3月7日（土） Growing Rails Applications In Practice P65 - P73
 
 - [Living style guide](https://github.com/hagenburger/livingstyleguide)というGemがあるようだ。
 - たぶん、名前をそのままパクっただけだと思うが、CSSのドキュメント化について記されている。
