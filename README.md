@@ -1,4 +1,22 @@
 # 横浜技術書朗読会 読書メモ
+## 2015年3月7日（土） Growing Rails Applications In Practice P65 - P
+
+- [Living style guide](https://github.com/hagenburger/livingstyleguide)というGemがあるようだ。
+- たぶん、名前をそのままパクっただけだと思うが、CSSのドキュメント化について記されている。
+- ここで使っているのは[hologram](https://github.com/trulia/hologram)。Truliaという不動産会社が作っているようだ。すげぇ。
+- P67からは実践的なBEMの使い方。ちょっとぐらいならBEMのルールを破ってもいいよという話。
+- ここで例としてあげられているのは、table/tr/tdタグについて。
+- BEMの原則に従うと、それぞれのタグについてclass名を指定する。
+- ただ、tableタグとtr/tdタグとの間には暗黙的な関連性があるので、ここではtableタグだけにclass名をつけている。
+- このような例外をまとめたのがP68。例えば、table/dl/ulなどのように子タグに暗黙的な関連性があるものは、クラス名を与えない。
+- :beforeや:afterというステートメントがCSSにあることを初めて知った...。擬似要素というらしい。[参考記事はここ](http://coliss.com/articles/build-websites/operation/css/css-tutorial-pseudo-element-before-after-by-hongkiat.html)。
+- P70からは「流行の追い方」という話。
+- Ruby on Railsは流行の影響を受ける。
+- P70の真ん中にその判断方法がある。結局は、ちょっとためしてみて前後比較してみる。
+- いろいろと試すのはいいが、一貫性を持つことが大事。あれこれとやってみて、アーキテクチャのパターンがバラバラだとNG。
+- P72からはRailsのアップグレードのペースに生き残る方法。
+- Gemの使いすぎとか、モンキーパッチとか、edgeなRailsを使うとかはアップグレードのコストを高めるので要注意。
+
 ## 2015年2月28日（土） Growing Rails Applications In Practice P55 - P65
 
 - メンテナンスしやすいCSSの設計として、ここではBEM（Block, Element, Modifier）って手法を用いる
