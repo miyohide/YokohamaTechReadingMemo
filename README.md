@@ -1,4 +1,11 @@
 # 横浜技術書朗読会 読書メモ
+## 2015年4月11日（土） Patterns of Enterprise Application Architecture P1 - P4
+
+- 今日から新しい本。いわゆるPoEAA。まずはIntroductionから。
+- Architectureという言葉について。ひとつは高いレベルでのブレイクダウンを指す。もう一つは、変更することが難しい決断について。正直、よくわからない。
+- P3にはEnterprise Applicationの例が記されている。自分がやったことがあるのは、domestic exchange trading.
+- P4には、ビジネスロジックは論理的ではないという記述があり、ちょっとおもしろかった。
+
 ## 2015年3月7日（土） Growing Rails Applications In Practice P65 - P73
 
 - [Living style guide](https://github.com/hagenburger/livingstyleguide)というGemがあるようだ。
